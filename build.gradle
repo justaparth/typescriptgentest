@@ -31,6 +31,7 @@ generateTypeScript {
     jsonLibrary = 'jackson2'
     classes = [
             'com.parth.testing.TestClassLombok',
+            'com.parth.testing.TestClassPublic',
             'com.parth.testing.TestClassGetterDifference',
     ]
     outputFile = 'build/sample.d.ts'
