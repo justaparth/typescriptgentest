@@ -7,6 +7,8 @@ After cloning the repo, please run:
 ./gradlew generateTypeScript
 ```
 
+The output should be under `build/sample.d.ts`.
+
 ## Problems
 If a private variable name starts with a single lower case letter followed by an uppercase letter, typescript
 generator fails to preserve the case. Note that I'm using Lombok here, which automatically generates the getters:
@@ -41,4 +43,4 @@ interface TestClassLombok {
 ```
 
 Note that if the variables are public, or we make the getter name slightly different, it seems to work
-okay (please see the other test classes).
+okay (please see https://github.com/justaparth/typescriptgentest/blob/master/src/main/java/com/parth/testing/Classes.java).
